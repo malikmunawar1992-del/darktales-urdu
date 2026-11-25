@@ -562,9 +562,9 @@
           <button class="lang-btn" type="button" data-setlang="en" aria-pressed="false">English</button>
         </div>
         <nav class="main" aria-label="مرکزی مینو">
+          <a href="#series" data-i18n="navSeries">سیریز</a>
           <a href="#short" data-i18n="navShort">مختصر کہانیاں</a>
           <a href="#long" data-i18n="navLong">طویل کہانیاں</a>
-          <a href="#series" data-i18n="navSeries">سیریز</a>
           <a href="#schedule" data-i18n="navSched">روزانہ شیڈول</a>
           <a href="#about" data-i18n="navAbout">ہمارے بارے میں</a>
         </nav>
@@ -619,7 +619,7 @@
         <div class="latin">DarkTales Urdu</div>
         <p class="lede" data-i18n="heroLede">اردو کی وہ خوفناک کہانیاں جو رات گئے آپ کی نیند اُڑا دیں — ویران حویلیاں، سنسان قبرستان، اور وہ کمرے جن کے دروازے صرف رات کو نظر آتے ہیں۔ ہر روز ایک نئی کہانی، موم بتی کی روشنی میں پڑھنے کے لیے۔</p>
         <div class="hero-cta">
-          <a class="btn primary" href="#short" data-i18n="heroRead">کہانیاں پڑھیں</a>
+          <a class="btn primary" href="#series" data-i18n="heroRead">کہانیاں پڑھیں</a>
           <a class="btn chrome" href="intent://muse.ai/s/darktales-urdu-xdxx6fxlqxktxyxj7/TBIaqW_yGRIna2TMh0OpqtBwtLCgmx1hEj-Y9ZQQ4Ts#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fmuse.ai%2Fs%2Fdarktales-urdu-xdxx6fxlqxktxyxj7%2FTBIaqW_yGRIna2TMh0OpqtBwtLCgmx1hEj-Y9ZQQ4Ts;end"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span data-i18n="chromeBtn">Chrome میں کھولیں</span></a>
           <a class="btn" href="#schedule" data-i18n="heroSched">آج کا شیڈول دیکھیں</a>
         </div>
@@ -633,6 +633,24 @@
 
     <main class="wrap notranslate" translate="no">
       <!-- Today's two stories -->
+      <!-- Series -->
+      <section id="series" aria-labelledby="series-h">
+        <div class="sec-head">
+          <div>
+            <h2 id="series-h"><span data-i18n="seriesH">سیریز</span> <span class="dot">۔</span></h2>
+            <p data-i18n="seriesSub">ایک کہانی، کئی قسطیں — اپنی پسند کی سیریز چنیں اور قسط در قسط پڑھیں</p>
+          </div>
+          <span class="orn" aria-hidden="true">❦ ❦ ❦</span>
+        </div>
+        <div class="series-grid" id="seriesGrid"></div>
+        <div class="series-view" id="seriesView" hidden>
+          <button class="btn" type="button" id="seriesBack" data-i18n="backBtn">← واپس</button>
+          <h3 id="seriesViewTitle"></h3>
+          <p class="series-sub" id="seriesViewSub"></p>
+          <div class="ep-list" id="epList"></div>
+        </div>
+      </section>
+
       <section id="todaySec" aria-labelledby="feat-h">
         <div class="sec-head">
           <div>
@@ -687,23 +705,6 @@
       </section>
 
 
-      <!-- Series -->
-      <section id="series" aria-labelledby="series-h">
-        <div class="sec-head">
-          <div>
-            <h2 id="series-h"><span data-i18n="seriesH">سیریز</span> <span class="dot">۔</span></h2>
-            <p data-i18n="seriesSub">ایک کہانی، کئی قسطیں — اپنی پسند کی سیریز چنیں اور قسط در قسط پڑھیں</p>
-          </div>
-          <span class="orn" aria-hidden="true">❦ ❦ ❦</span>
-        </div>
-        <div class="series-grid" id="seriesGrid"></div>
-        <div class="series-view" id="seriesView" hidden>
-          <button class="btn" type="button" id="seriesBack" data-i18n="backBtn">← واپس</button>
-          <h3 id="seriesViewTitle"></h3>
-          <p class="series-sub" id="seriesViewSub"></p>
-          <div class="ep-list" id="epList"></div>
-        </div>
-      </section>
 
       <!-- Schedule -->
       <section id="schedule" aria-labelledby="sched-h">
@@ -779,9 +780,9 @@
     <footer>
       <div class="latin">DARKTALES URDU</div>
       <nav aria-label="فوٹر مینو">
+        <a href="#series" data-i18n="navSeries">سیریز</a>
         <a href="#short" data-i18n="navShort">مختصر کہانیاں</a>
         <a href="#long" data-i18n="navLong">طویل کہانیاں</a>
-        <a href="#series" data-i18n="navSeries">سیریز</a>
         <a href="#schedule" data-i18n="footSched">شیڈول</a>
         <a href="#facebook" data-i18n="footFb">فیس بک</a>
       </nav>
